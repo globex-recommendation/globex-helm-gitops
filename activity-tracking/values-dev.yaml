@@ -1,0 +1,15 @@
+activity-tracking:
+  image:
+    repository: quay.io/globex-recommendation/activity-tracking-service
+    tag: "527047f" 
+
+  route:
+    enabled: true
+
+  kafka:
+    bootstrapServer: 
+    trackingEventTopic: globex.tracking
+    securityProtocol: SASL_SSL
+    saslMechanism: PLAIN
+    userId: 
+    password: 
